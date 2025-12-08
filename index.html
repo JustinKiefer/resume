@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Justin John Lloyd Dumaliang - Resume</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e40af;
+      --accent: #3b82f6;
+      --light: #f8fafc;
+      --dark: #1e293b;
+      --gray: #64748b;
+    }
+
+    /* CHANGED: Dark gradient background */
+    body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      color: white;                 /* Text now white for dark bg */
+      min-height: 100vh;
+      padding: 20px 0;
+    }
+
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .profile-img:hover { transform: scale(1.05); }
+
+    /* Card now dark with glass effect */
+    .left-card, .right-card, .combined-card {
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(100, 150, 255, 0.2);
+      color: white;
+    }
+    .combined-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #60a5fa;
+      position: relative;
+      padding-bottom: 12px;
+      font-size: 1.5rem;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 70px;
+      height: 5px;
+      background: linear-gradient(90deg, #60a5fa, #34d399);
+      border-radius: 10px;
+    }
+
+    .progress {
+      height: 10px;
+      background: #334155;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 8px 0;
+    }
+    .progress-bar {
+      border-radius: 10px;
+      background: linear-gradient(90deg, #60a5fa, #34d399);
+      transition: width 1.5s ease-in-out;
+    }
+
+    .list-unstyled i {
+      font-size: 1.1rem;
+      width: 28px;
+      color: #60a5fa;
+    }
+
+    .text-muted { color: #cbd5e1 !important; }
+    .h4 { color: white; font-weight: 800; }
+
+    /* Mobile responsive */
+    @media (max-width: 992px) {
+      .left-card { position: static !important; margin-bottom: 30px; }
+    }
+
+    @media print {
+      body, .combined-card { background: white !important; color: black !important; }
+      .profile-img { border: 4px solid #000; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-4">
+  <div class="card shadow-lg combined-card">
+    <div class="card-body p-4">
+
+      <div class="row">
+
+        <!-- LEFT SIDE -->
+        <div class="col-md-4 text-center">
+          <img src="cdgf.jpg" class="profile-img mb-3" alt="">
+          <h2 class="h4 mb-1">Justin John Lloyd Dumaliang</h2>
+          <p class="text-muted mb-4">Web Developer • IT Student</p>
+
+          <ul class="list-unstyled text-start d-inline-block w-100 px-3">
+            <li class="mb-2"><i class="bi bi-envelope text-primary me-2"></i> djustinjohnlloyd@gmail.com</li>
+            <li class="mb-2"><i class="bi bi-phone text-primary me-2"></i> 09364025468</li>
+            <li class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> San Juan, Ilocos Sur</li>
+            <li class="mb-2"><i class="bi bi-github text-primary me-2"></i> github.com/JustinJohnLloyd</li>
+          </ul>
+
+          <hr>
+
+          <h4 class="section-title mb-3">Skills</h4>
+
+          <div class="mb-3">HTML / CSS     <div class="progress"><div class="progress-bar" style="width: 90%"></div></div></div>
+          <div class="mb-3">JavaScript    <div class="progress"><div class="progress-bar" style="width: 75%"></div></div></div>
+          <div class="mb-3">Bootstrap     <div class="progress"><div class="progress-bar" style="width: 85%"></div></div></div>
+          <div class="mb-3">Git & GitHub  <div class="progress"><div class="progress-bar" style="width: 80%"></div></div></div>
+          <div class="mb-3">PHP / MySQL   <div class="progress"><div class="progress-bar" style="width: 70%"></div></div></div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-md-8 ps-md-5">
+          <p class="text-muted">
+            Highly motivated Information Technology student with strong foundation in web development.
+          </p>
+
+          <hr>
+
+          <h4 class="section-title">Education</h4>
+
+          <div class="mt-3">
+            <h5 class="fw-bold">Bachelor of Science in Information Technology</h5>
+            <p class="text-muted mb-1">Ilocos Sur Community College</p>
+            <p class="small text-primary fw-bold">2023 – Present</p>
+          </div>
+
+          <div class="mt-3">
+            <h5 class="fw-bold">Senior High School</h5>
+            <p class="text-muted mb-1">San Juan National High School</p>
+            <p class="small text-success fw-bold">Graduated 2023</p>
+          </div>
+
+          <div class="mt-3">
+            <h5 class="fw-bold">Junior High School</h5>
+            <p class="text-muted mb-1">San Juan National High School</p>
+            <p class="small text-success fw-bold">Graduated 2021</p>
+          </div>
+
+          <div class="mt-3">
+            <h5 class="fw-bold">Elementary</h5>
+            <p class="text-muted mb-1">Echague West Central School</p>
+            <p class="small text-success fw-bold">Graduated 2017</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
